@@ -164,7 +164,7 @@ class simulator:
 
         total_cycles = 0
         for layer_obj in self.single_layer_sim_object_list:
-            cycles_this_layer = int(layer_obj.get_compute_report_items[0])
+            cycles_this_layer = int(layer_obj.get_compute_report_items()[0])
             total_cycles += cycles_this_layer
 
         return total_cycles
